@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>상담 신청1</title>
+        <link rel = "stylesheet" href = "page1.css">
+        <body style="text-align: left;">
+            <b>신청자 정보 (필수) <small style = "color:red;">*</small></b>
+            <br>
+            <p>
+        <table align = "left" border = "0" width = "300px" height = "75px">
+        <tr>
+            <td>이름</td><td>전화번호</td>
+        </tr>
+        <br>
+        <tr>
+            <td><input type = "text" id = "name" size = "10" ></td>
+            <td><input type = "tel" id = "phone" size = "15"></td>
+        </tr>
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "200px" height = "75px">
+        <tr>
+            <th colspan = "2" align = "left">캠퍼스를 선택하세요</th>
+        </tr>
+        <tr>
+            <td><input type = "radio" name = "place" value = "강남" /> 강남</td>
+            <td><input type = "radio" name = "place" value = "목동" /> 목동</td>
+        </tr>
+    </table>
+    </p> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <table align = "left"  width = "500px" height = "100px">
+            <tr>
+            <th colspan="2" align = "left">준비중인 파트를 선택하세요</th>
+        </tr>
+        <tr>
+            <td><input type = "radio" name = "part" value = "오디션" /> 오디션</td>
+            <td><input type = "radio" name = "part" value = "예고 입시" /> 예고 입시</td>
+            <td><input type = "radio" name = "part" value = "예대 입시" /> 예대 입시</td>
+            <td><input type = "radio" name = "part" value = "키즈(14세 미만)" /> 키즈(14세 미만)</td>
+        </tr>
+        <tr>
+            <td><input type = "radio" name = "part" value = "취미" /> 취미</td>
+            <td><input type = "radio" name = "part" value = "전문" /> 전문</td>
+        </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table border = "0" align = "left" width = "500px" height = "100px">
+        <tr>
+            <th colspan="4" align = "left">수강희망 과목을 선택하세요 (중복선택 가능)</th>
+        </tr>
+        <tr>
+            <td><input type ="checkbox" id = "check_part" value = "보컬" /> 보컬</td>
+            <td><input type ="checkbox" id = "check_part" value = "댄스" /> 댄스</td>
+            <td><input type ="checkbox" id = "check_part" value = "작곡/미디" /> 작곡/미디</td>
+            <td><input type ="checkbox" id = "check_part" value = "힙합/랩/비트메이킹" /> 힙합/랩/비트메이킹</td>
+        </tr>
+        <tr>
+            <td><input type ="checkbox" id = "check_part" value = "악기" /> 악기</td>
+            <td><input type ="checkbox" id = "check_part" value = "연기" /> 연기</td>
+            <td><input type ="checkbox" id = "check_part" value = "싱어송라이터" /> 싱어송라이터</td>
+            <td><input type ="checkbox" id = "check_part" value = "뮤지컬" /> 뮤지컬</td>
+        </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table border = "0" align = "left" width = "500px" height = "100px">
+        <tr>
+            <th colspan="3" align = "left">궁금한 주제를 선택하세요 (중복선택 가능)</th>
+        </tr>
+        <tr>
+            <td><input type ="checkbox" id = "check_question" value = "커리큘럼" /> 커리큘럼</td>
+            <td><input type ="checkbox" id = "check_question" value = "학원시스템" /> 학원시스템</td>
+            <td><input type ="checkbox" id = "check_question" value = "수강료" /> 수강료</td>
+            <td><input type ="checkbox" id = "check_question" value = "오디션 안내" /> 오디션 안내</td>
+        </tr>
+    </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="button" name="btn_상담신청" value="상담 신청하기" onclick="location.href='page2.html'">
+    </body>
+</head>
+</html>
+
+        
+        

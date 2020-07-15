@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>수강 정보</title>
+        <link rel = "stylesheet" type = "text/css" href = "page5.css">
+        <body>
+        <b>수강정보</b>
+        <br>
+        <table border = "0" align = "middle" width = "700px" height = "50px">
+            <tr>
+                <th>과목</th>
+            <td><select id = "class" >
+                <option value = "class"></option>
+                <option>보컬</option>
+                <option>미디</option>
+                <option>피아노</option>
+                <option>그룹발성</option>
+                <option>그룹화성학</option>
+                <option>랩</option>
+            </select></td>
+            <th>선생님</th>
+            <td><select id = "teacher">
+                <option value = "teacher"></option>
+                <option>강민우</option>
+                <option>김도진</option>
+                <option>김미정</option>
+                <option>김소담</option>
+                <option>김태양</option>
+                <option>김태진</option>
+                <option>박희연</option>
+                <option>신승현</option>
+                <option>이건주</option>
+                <option>이승택</option>
+                <option>이혜리</option>
+                <option>장수연</option>
+                <option>전준규</option>
+                <option>사훈</option>
+                <option>직원</option>
+            </select></td>
+            <th>수업료</th>
+            <td><input type = "text" /></td>
+            <th>결제 개월수</th>
+            <td><select id = "pay_month">
+                <option value = "pay_month"></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select></td>
+            </tr>
+        </table>
+                <input type ="button" id = "btn_수업등록" value = "수업 등록" />
+                <br>
+                <br>
+                <table border = "0" align = "middle" width = "700px" height = "100px">
+                <tr>
+                    <th>과목</th>
+                <td><select id = "pay_month">
+                    <option value = "pay_month"></option>
+                    <option>보컬</option>
+                    <option>댄스</option>
+                    <option>작곡/미디</option>
+                    <option>힙합/랩/비트메이킹</option>
+                    <option>악기</option>
+                    <option>연기</option>
+                    <option>싱어송라이터</option>
+                    <option>뮤지컬</option>
+                    </select></td>
+                <th>선생님</th>
+                <td><select id = "teacher">
+                    <option value = "teacher"></option>
+                    <option>강민우</option>
+                    <option>김도진</option>
+                    <option>김미정</option>
+                    <option>김소담</option>
+                    <option>김태양</option>
+                    <option>김태진</option>
+                    <option>박희연</option>
+                    <option>신승현</option>
+                    <option>이건주</option>
+                    <option>이승택</option>
+                    <option>이혜리</option>
+                    <option>장수연</option>
+                    <option>전준규</option>
+                    <option>사훈</option>
+                    <option>직원</option>
+                </select></td>
+                <th>환불금액</th>
+                <td><input type = "text"></td>
+            </tr>
+            <tr>
+                <th>환불 사유</th>
+                <td><select id = "refund">
+                    <option value = "refund"></option>
+                    <option>오디션 합격</option>
+                    <option>입시 합격</option>
+                    <option>기타</option>
+                </select></td>
+                <th colspan="2">환불 사유(상세)</th>
+                <td colspan="2"><textarea name = "환불 사유(상세)" cols = "40" rows = "3"></textarea></td>
+            </tr>
+            </table>
+                <br>
+                <input type = "button" id = "btn_환불등록" value = "환불 등록" />
+                <br>
+                <br>
+                <table border = "1" align = "middle" width = "600px" height = "100px">
+                    <thread>
+                    <tr>
+                    <th>결제일</th>
+                    <th>과목</th>
+                    <th>선생님</th>
+                    <th>수업료</th>
+                    <th>결제 개월</th>
+                    </tr>
+                    <tr>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>                       
+                    </tr>
+                    <tr>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>
+                        <td><input type = "text"></td>                       
+                    </tr>
+                </thread>
+                    
+
+                </table>
+            </select>
+
+
+
+
+
+
+
+        </body>
+    </head>
+</html>

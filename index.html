@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset = "utf-8">
+        <title> 로그인 페이지 </title>
+        <link rel = "stylesheet" type = "text/css" href = "index.css">
+</head>
+<body style="text-align: center;">
+    <h1><b>로그인 페이지</b></h1></p>
+    <table align = "center">
+    <form>
+    <tr>   
+        <td><label>ID : </td><td><input type = "username" size = "20" minlength = "4" maxlength="15" autofocus required placeholder="아이디"></label></td>
+            <!--<td><small style = "color:red;">4~15자리 이내의 영문과 숫자</small></td>-->
+        </tr>
+        <br>
+        <tr>
+        <td><label>PW : </td><td><input type = "password" size = "20" autofocus required placeholder="비밀번호"></label></td>
+    </tr>
+    </form>
+    </table>
+    <input type="button" name="login" value="다음" onclick="location.href='page1.html'">
+    <input type = "button" id = "login" value = "로그인" onclick = "location.href = 'page1.html'">
+
+
+    <script src = "js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>상담 신청2</title>
+        <link rel = "stylesheet" type = "text/css" href = "page2.css">
+        <body>
+            <b>전화 상담 확인</b>
+            <br>
+            <table align = "left" border = "0" width = "300px" height = "75px">
+            <tr>
+            <td>이름</td><td>전화번호</td>
+            </tr>
+            <br>
+            <tr>
+                <td><input type = "text" id = "name" size = "10" ></td>
+                <td><input type = "text" id = "phone" size = "15"></td>
+            </tr>
+            </table>
+        <br>
+        <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "200px" height = "75px">
+            <tr>
+                <th colspan = "2" align = "left">캠퍼스를 선택하세요</th>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "place" value = "강남" /> 강남</td>
+                <td><input type = "radio" name = "place" value = "목동" /> 목동</td>
+            </tr>
+        </table>  
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left"  width = "500px" height = "100px">
+                <tr>
+                <th colspan="2" align = "left">준비중인 파트를 선택하세요</th>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "part" value = "오디션" /> 오디션</td>
+                <td><input type = "radio" name = "part" value = "예고 입시" /> 예고 입시</td>
+                <td><input type = "radio" name = "part" value = "예대 입시" /> 예대 입시</td>
+                <td><input type = "radio" name = "part" value = "키즈(14세 미만)" /> 키즈(14세 미만)</td>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "part" value = "취미" /> 취미</td>
+                <td><input type = "radio" name = "part" value = "전문" /> 전문</td>
+            </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table border = "0" align = "left" width = "500px" height = "100px">
+                <tr>
+                    <th colspan="4" align = "left">수강희망 과목을 선택하세요 (중복선택 가능)</th>
+                </tr>
+                <tr>
+                    <td><input type ="checkbox" id = "check_part" value = "보컬" /> 보컬</td>
+                    <td><input type ="checkbox" id = "check_part" value = "댄스" /> 댄스</td>
+                    <td><input type ="checkbox" id = "check_part" value = "작곡/미디" /> 작곡/미디</td>
+                    <td><input type ="checkbox" id = "check_part" value = "힙합/랩/비트메이킹" /> 힙합/랩/비트메이킹</td>
+                </tr>
+                <tr>
+                    <td><input type ="checkbox" id = "check_part" value = "악기" /> 악기</td>
+                    <td><input type ="checkbox" id = "check_part" value = "연기" /> 연기</td>
+                    <td><input type ="checkbox" id = "check_part" value = "싱어송라이터" /> 싱어송라이터</td>
+                    <td><input type ="checkbox" id = "check_part" value = "뮤지컬" /> 뮤지컬</td>
+                </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <table border = "0" align = "left" width = "500px" height = "100px">
+                    <tr>
+                        <th colspan="3" align = "left">궁금한 주제를 선택하세요 (중복선택 가능)</th>
+                    </tr>
+                    <tr>
+                        <td><input type ="checkbox" id = "check_question" value = "커리큘럼" /> 커리큘럼</td>
+                        <td><input type ="checkbox" id = "check_question" value = "학원시스템" /> 학원시스템</td>
+                        <td><input type ="checkbox" id = "check_question" value = "수강료" /> 수강료</td>
+                        <td><input type ="checkbox" id = "check_question" value = "오디션 안내" /> 오디션 안내</td>
+                     </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            <table border = "0" align = "left" width = "500px" height = "100px">
+                <tr>
+                    <th colspan = "2" align = "left">상담 확인(운영자 전용)</th>
+                </tr>
+                <tr>
+                    <td>1차 상담확인</td>
+                    <td><input type = "radio" name = "1_check" value = "미확인" /> 미확인</td>
+                    <td><input type = "radio" name = "1_check" value = "확인" /> 확인</td>
+                    <td></td>
+                    <td>상담자</td>
+                    <td><select id = "counselor1">
+                <option value = "상담자1"></option>
+                <option>강민우</option>
+                <option>김도진</option>
+                <option>김미정</option>
+                <option>김소담</option>
+                <option>김태양</option>
+                <option>김태진</option>
+                <option>박희연</option>
+                <option>신승현</option>
+                <option>이건주</option>
+                <option>이승택</option>
+                <option>이혜리</option>
+                <option>장수연</option>
+                <option>전준규</option>
+                <option>사훈</option>
+                <option>직원</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>2차 상담확인</td>
+                <td><input type = "radio" name = "2_check" value = "미확인" /> 미확인</td>
+                <td><input type = "radio" name = "2_check" value = "확인" /> 확인</td>
+                <td></td>
+                <td>상담자</td>
+                <td><select id = "counselor2">
+                <option value = "상담자2"></option>
+                <option>강민우</option>
+                <option>김도진</option>
+                <option>김미정</option>
+                <option>김소담</option>
+                <option>김태양</option>
+                <option>김태진</option>
+                <option>박희연</option>
+                <option>신승현</option>
+                <option>이건주</option>
+                <option>이승택</option>
+                <option>이혜리</option>
+                <option>장수연</option>
+                <option>전준규</option>
+                <option>사훈</option>
+                <option>직원</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>3차 상담확인</td>
+            <td><input type = "radio" name = "3_check" value = "미확인" /> 미확인</td>
+            <td><input type = "radio" name = "3_check" value = "확인" /> 확인</td>
+            <td><input type = "radio" name = "3_check" value = "포기" /> 포기</td>
+            <td>상담자</td>
+            <td><select id = "counselor3">
+                <option value = "상담자3"></option>
+                <option>강민우</option>
+                <option>김도진</option>
+                <option>김미정</option>
+                <option>김소담</option>
+                <option>김태양</option>
+                <option>김태진</option>
+                <option>박희연</option>
+                <option>신승현</option>
+                <option>이건주</option>
+                <option>이승택</option>
+                <option>이혜리</option>
+                <option>장수연</option>
+                <option>전준규</option>
+                <option>사훈</option>
+                <option>직원</option>
+            </select></td>
+            </tr>
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table border = "0" align = "left" width = "600px" height = "100px">
+            <tr>
+                <th colspan="2" align = "left">상담내용</th>
+            <td><textarea name = "방문 상담 내용" cols = "56" rows = "5"></textarea></td>
+            </tr>
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <table border = "0" align = "left" width = "300px" height = "50px">
+            <tr>
+                <th align = "left">방문 상담 예약</th>
+                <td><input type = "radio" name = "meeting" value = "예약" /> 예약</td>
+                <td><input type = "radio" name = "meeting" value = "미예약" /> 미예약</td>
+            </tr>
+            <tr>
+                <th align = "left">방문 예약 일시</th>
+                <td colspan="2"><input type = "date" id = "meeting_time" value = "방문 예약 일시"/></td>
+            </tr>
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table border = "0" align = "left" width = "500px" height = "50px">
+            <tr>
+                <th colspan = "2" align = "left">방문 상담 확인</th>
+            </tr>
+            <tr>
+            <th align="left">사전예약 현황</th>
+            <td><input type = "radio" name = "about_meeting" value = "미예약" /> 미예약</td>
+            <td><input type = "radio" name = "about_meeting" value = "당일 전화예약" /> 당일 전화예약</td>
+            <td><input type = "radio" name = "about_meeting" value = "사전예약" /> 사전예약</td>
+            </tr>
+            <tr>
+                <th align="left">캠퍼스</th>
+                <td><input type = "radio" name = "campus" value = "강남" /> 강남</td>
+                <td><input type = "radio" name = "campus" value = "목동" /> 목동</td>
+            </tr>
+        </table>    
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>기본정보</b>
+            <br>
+            <table align = "left" border = "0" width = "300px" height = "75px">
+                <tr>
+                    <td>이름</td><td>전화번호</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><input type = "text" id = "name" size = "10" ></td>
+                    <td><input type = "text" id = "phone" size = "15"></td>
+                </tr>
+                <tr>
+                    <td>보호자 관계</td>
+                    <td>전화번호</td>
+                </tr>
+                <tr>
+                    <td><select id = "parent_relation">
+                <option value = "보호자 관계"></option>
+                <option>부</option>
+                <option>모</option>
+                <option>친척</option>
+                <option>기타</option>
+            </select></td>
+                <td><input type = "text" id = "parent_phone" size = "15" ></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "400px" height = "50px">
+                <tr>
+                    <th>성별</th>
+                    <td><input type = "radio" name = "sex" value = "남자" /> 남자</td>
+                    <td><input type = "radio" name = "sex" value = "여자" /> 여자</td>
+                    <th>국적</th>
+                    <td><input type = "radio" name = "region" value = "국내" /> 국내</td>
+                    <td><input type = "radio" name = "region" value = "해외" /> 해외</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "600px" height = "50px">
+                <tr>
+                    <th align = "left">생년월일</th>
+                    <td><input type = "date" id = "born" value = "" /></td>
+                    <td></td>
+                    <td><input type = "text" id = "age" value = "" /></td>
+                </tr>
+                <tr>
+                    <th align="left">주소</th>
+                    <td><select id = "address">
+                <option value = "주소"></option>
+                <option>강릉시</option>
+                <option>거제시</option>
+                <option>경산시</option>
+                <option>경주시</option>
+                <option>계룡시</option>
+                <option>고양시</option>
+                <option>공주시</option>
+                <option>과천시</option>
+                <option>광명시</option>
+                <option>광양시</option>
+                <option>광주시</option>
+                <option>구리시</option>
+                <option>구미시</option>
+                <option>군산시</option>
+                <option>군포시</option>
+                <option>김제시</option>
+                <option>김천시</option>
+                <option>김포시</option>
+                <option>김해시</option>
+                <option>나주시</option>
+                <option>남양주시</option>
+                <option>남원시</option>
+                <option>논산시</option>
+                <option>당진시</option>
+                <option>대구광역시</option>
+                <option>동두천시</option>
+                <option>동해시</option>
+                <option>목포시</option>
+                <option>문경시</option>
+                <option>밀양시</option>
+                <option>보령시</option>
+                <option>부산광역시</option>
+                <option>부천시</option>
+                <option>사천시</option>
+                <option>삼척시</option>
+                <option>상주시</option>
+                <option>서귀포시</option>
+                <option>서산시</option>
+                <option>서울특별시</option>
+                <option>성남시</option>
+                <option>세종시</option>
+                <option>속초시</option>
+                <option>수원시</option>
+                <option>순천시</option>
+                <option>시흥시</option>
+                <option>아산시</option>
+                <option>안동시</option>
+                <option>안산시</option>
+                <option>안성시</option>
+                <option>안양시</option>
+                <option>양산시</option>
+                <option>양주시</option>
+                <option>여수시</option>
+                <option>영주시</option>
+                <option>영천시</option>
+                <option>오산시</option>
+                <option>용인시</option>
+                <option>울산광역시</option>
+                <option>원주시</option>
+                <option>의왕시</option>
+                <option>의정부시</option>
+                <option>이천시</option>
+                <option>익산시</option>
+                <option>인천광역시</option>
+                <option>전주시</option>
+                <option>정읍시</option>
+                <option>제주시</option>
+                <option>제천시</option>
+                <option>진주시</option>
+                <option>창원시</option>
+                <option>천안시</option>
+                <option>청주시</option>
+                <option>춘천시</option>
+                <option>충주시</option>
+                <option>태백시</option>
+                <option>통영시</option>
+                <option>파주시</option>
+                <option>평택시</option>
+                <option>포천시</option>
+                <option>포항시</option>
+                <option>하남시</option>   
+                <option>화성시</option>    
+            </select></td>
+                    <td><input type = "text" id = "address" value = "" /></td>
+                    <td><input type = "text" id = "address" value = "" /></td>
+                </tr>
+                <tr>
+                    <th>학교/직업</th>
+                    <td><select id = "work">
+                <option value = "학교/직업"></option>
+                <option>초등학교</option>
+                <option>중학교</option>
+                <option>고등학교</option>
+                <option>대학교</option>
+                <option>학교 안다님</option>
+                <option>직장인(사회인)</option>
+            </select></td>
+                    <th align="left">학교명/직장명</th>
+                    <td><input type = "text" id = "work" value = "" /></td>
+            </tr>
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "550px" height = "75px">
+                <tr>
+                <th align = "left">관심정보</th>
+                </tr>
+                <tr>
+                    <th align = "left">등급</th>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "interest" value = "오디션(아이돌)" /> 오디션(아이돌)</td>
+                    <td><input type = "checkbox" id = "interest" value = "오디션(싱어송)" /> 오디션(싱어송)</td>
+                    <td><input type = "checkbox" id = "interest" value = "오디션(배우)" /> 오디션(배우)</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "interest" value = "입시(예대)" /> 입시(예대)</td>
+                    <td><input type = "checkbox" id = "interest" value = "입시(예고)" /> 입시(예고)</td>
+                </tr>
+                <tr>        
+                    <td><input type = "checkbox" id = "interest" value = "취미(학생)" /> 취미(학생)</td>
+                    <td><input type = "checkbox" id = "interest" value = "취미(학생)" /> 취미(학생)</td>
+                    <td><input type = "checkbox" id = "interest" value = "취미(단기)" /> 취미(단기)</td>
+                    <td><input type = "checkbox" id = "interest" value = "취미(단기유학)" /> 취미(단기유학)</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "interest" value = "키즈(14세 미만)" /> 키즈(14세 미만)</td>
+                    <td><input type = "checkbox" id = "interest" value = "전문" /> 전문</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "550px" height = "75px">
+                <tr>
+                    <th colspan="4" align = "left">수강희망 과목을 선택하세요(중복선택 가능)</th>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "class" value = "보컬" /> 보컬</td>
+                    <td><input type = "checkbox" id = "class" value = "댄스" /> 댄스</td>
+                    <td><input type = "checkbox" id = "class" value = "작곡/미디" /> 작곡/미디</td>
+                    <td><input type = "checkbox" id = "class" value = "힙합/랩/비트메이킹" /> 힙합/랩/비트메이킹</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "class" value = "악기" /> 악기</td>
+                    <td><input type = "checkbox" id = "class" value = "연기" /> 연기</td>
+                    <td><input type = "checkbox" id = "class" value = "싱어송라이터" /> 싱어송라이터</td>
+                    <td><input type = "checkbox" id = "class" value = "뮤지컬" /> 뮤지컬</td>
+                </tr>    
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <table align = "left" border = "0" width = "550px" height = "75px">
+                <tr>
+            <th align="left">방문 경로(중복 가능)</th>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "how_visit" value = "무응답" /> 무응답</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "네이버 검색" /> 네이버 검색</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "지인 소개" /> 지인 소개</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "입소문" /> 입소문</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "how_visit" value = "예전 수강생" /> 예전 수강생</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "드림댄스" /> 드림댄스</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "유튜브" /> 유튜브</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "틱톡" /> 틱톡</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "how_visit" value = "페이스북" /> 페이스북</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "특강" /> 특강</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "지나가다" /> 지나가다</td>
+                    <td><input type = "checkbox" id = "how_visit" value = "인스타" /> 인스타</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "how_visit" value = "업보트" /> 업보트</td>                </tr>    
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "500px" height = "75px">
+                <tr>
+                    <th align = "left">방문동기</th>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 무응답</td>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 오디션, 공연기회가 많아서</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 유튜브 촬영기회</td>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 체계적으로 관리</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 입시 합격생이 많아서</td>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 오디션 합격생이 많아서</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 친구(지인)이가 있어서</td>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 강사진이 좋아서</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 위치상 접근성이 좋아서</td>
+                    <td><input type = "checkbox" id = "why_visit" value = "업보트" /> 시설이 좋아서</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" name="button1" value="다음" onclick="location.href='page3.html'">
+        </body>
+    </head>
+</html>

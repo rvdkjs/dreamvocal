@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>재원생 정보</title>
+        <link rel = "stylesheet" type = "text/css" href = "page4.css">
+        <body>
+            <b>재원생 정보</b>
+            <br>
+            <br>
+            <table border = "0" align = "left" width = "550px" height = "50px">
+                <tr>
+                    <th align="left">최근 방문 상담일</th>
+                    <td><input type = "date" id = "recent_meeting" value = "" /></td>
+                    <th align="left">수강 등록일</th>
+                    <td><input type = "date" id = "recent_meeting" value = "" /></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <b>기본정보</b>
+            <table align = "left" border = "0" width = "300px" height = "75px">
+                <tr>
+                    <td>이름</td><td>전화번호</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><input type = "text" id = "name" size = "10" ></td>
+                    <td><input type = "text" id = "phone" size = "15"></td>
+                </tr>
+                <tr>
+                    <td>보호자 관계</td>
+                    <td>전화번호</td>
+                </tr>
+                <tr>
+                    <td><select id = "parent_relation">
+                <option value = "보호자 관계"></option>
+                <option>부</option>
+                <option>모</option>
+                <option>친척</option>
+                <option>기타</option>
+            </select></td>
+                <td><input type = "text" id = "parent_phone" size = "15" ></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "400px" height = "50px">
+                <tr>
+                    <th>성별</th>
+                    <td><input type = "radio" name = "sex" value = "남자" /> 남자</td>
+                    <td><input type = "radio" name = "sex" value = "여자" /> 여자</td>
+                    <th>국적</th>
+                    <td><input type = "radio" name = "region" value = "국내" /> 국내</td>
+                    <td><input type = "radio" name = "region" value = "해외" /> 해외</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <table align = "left" border = "0" width = "600px" height = "50px">
+                <tr>
+                    <th align = "left">생년월일</th>
+                    <td><input type = "date" id = "born" value = "" /></td>
+                    <td></td>
+                    <td><input type = "text" id = "age" value = "" /></td>
+                </tr>
+                <tr>
+                    <th align="left">주소</th>
+                    <td><select id = "address">
+                <option value = "주소"></option>
+                <option>강릉시</option>
+                <option>거제시</option>
+                <option>경산시</option>
+                <option>경주시</option>
+                <option>계룡시</option>
+                <option>고양시</option>
+                <option>공주시</option>
+                <option>과천시</option>
+                <option>광명시</option>
+                <option>광양시</option>
+                <option>광주시</option>
+                <option>구리시</option>
+                <option>구미시</option>
+                <option>군산시</option>
+                <option>군포시</option>
+                <option>김제시</option>
+                <option>김천시</option>
+                <option>김포시</option>
+                <option>김해시</option>
+                <option>나주시</option>
+                <option>남양주시</option>
+                <option>남원시</option>
+                <option>논산시</option>
+                <option>당진시</option>
+                <option>대구광역시</option>
+                <option>동두천시</option>
+                <option>동해시</option>
+                <option>목포시</option>
+                <option>문경시</option>
+                <option>밀양시</option>
+                <option>보령시</option>
+                <option>부산광역시</option>
+                <option>부천시</option>
+                <option>사천시</option>
+                <option>삼척시</option>
+                <option>상주시</option>
+                <option>서귀포시</option>
+                <option>서산시</option>
+                <option>서울특별시</option>
+                <option>성남시</option>
+                <option>세종시</option>
+                <option>속초시</option>
+                <option>수원시</option>
+                <option>순천시</option>
+                <option>시흥시</option>
+                <option>아산시</option>
+                <option>안동시</option>
+                <option>안산시</option>
+                <option>안성시</option>
+                <option>안양시</option>
+                <option>양산시</option>
+                <option>양주시</option>
+                <option>여수시</option>
+                <option>영주시</option>
+                <option>영천시</option>
+                <option>오산시</option>
+                <option>용인시</option>
+                <option>울산광역시</option>
+                <option>원주시</option>
+                <option>의왕시</option>
+                <option>의정부시</option>
+                <option>이천시</option>
+                <option>익산시</option>
+                <option>인천광역시</option>
+                <option>전주시</option>
+                <option>정읍시</option>
+                <option>제주시</option>
+                <option>제천시</option>
+                <option>진주시</option>
+                <option>창원시</option>
+                <option>천안시</option>
+                <option>청주시</option>
+                <option>춘천시</option>
+                <option>충주시</option>
+                <option>태백시</option>
+                <option>통영시</option>
+                <option>파주시</option>
+                <option>평택시</option>
+                <option>포천시</option>
+                <option>포항시</option>
+                <option>하남시</option>   
+                <option>화성시</option>    
+            </select></td>
+                    <td><input type = "text" id = "address" value = "" /></td>
+                    <td><input type = "text" id = "address" value = "" /></td>
+                </tr>
+                <tr>
+                    <th>학교/직업</th>
+                    <td><select id = "work">
+                <option value = "학교/직업"></option>
+                <option>초등학교</option>
+                <option>중학교</option>
+                <option>고등학교</option>
+                <option>대학교</option>
+                <option>학교 안다님</option>
+                <option>직장인(사회인)</option>
+            </select></td>
+                    <th align="left">학교명/직장명</th>
+                    <td><input type = "text" id = "work" value = "" /></td>
+            </tr>
+        </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>추가 정보</b>
+            <br>
+            <table border = "0" align = "left" width = "700px" height = "50px">
+                <tr>
+                    <th align="left">등급</th>
+                    <td><input type = "number" id = "rating" value = "" /></td>
+                    <td>수강료 납부 관련 주요 사항<br>
+                (현금영수증, 카드, 특정 결제일 납부, 납부 방법 등)</td>
+                </tr>
+                <tr>
+                    <th>에듀그램 학번</th>
+                    <td><input type = "text" id = "edugram" value = "" /></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table border = "1" align = "left" width = "650px" height = "50px">
+                <tr>
+                    <td><input type = "file" id = "input_img" class = "image_inputType_file" accept = "img/*" required multiple></td>
+                    <td><textarea name = "comment" cols = "50" rows = "7"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>           
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type = "button" id = "save&edit" value = "저장 및 수정 등록" />
+            <br>
+            <br>
+            <br>
+            <b>방문 상담 내용 요약 (등록전)</b>
+            <br>
+            <br>
+            <textarea name = "방문 상담 내용 요약 (등록전)" cols = "60" rows = "5"></textarea>
+            <br>
+            <br>
+            <table border = "0" align = "left" width = "600px" height = "50px">
+                <tr>
+                    <th>최종 방문 상담자</th>
+                    <td><input type = "datetime" /></td> 
+                </tr>
+                <tr>
+                    <th>방문상담내용</th>
+                    <td><textarea name = "방문 상담 내용" cols = "60" rows = "5"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table border = "0" align = "left" width = "600px" height = "50px">
+                <tr>
+                    <th>레벨테스트 진행자</th>
+                    <td><input type = "datetime" /></td> 
+                </tr>
+                <tr>
+                    <th>코멘트</th>
+                    <td><textarea name = "방문 상담 내용" cols = "60" rows = "5"></textarea></td>
+                </tr>
+            </table>
+            </body>
+    </head>
+</html>
